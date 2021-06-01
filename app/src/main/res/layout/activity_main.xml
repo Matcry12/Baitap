@@ -13,6 +13,7 @@
         android:layout_height="60dp"
         android:backgroundTint="@color/white"
         android:drawableLeft="@drawable/_removal_ai__tmp_607d881200112__1_"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:id="@+id/myprofile"
@@ -22,6 +23,7 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/back"
         />
 
