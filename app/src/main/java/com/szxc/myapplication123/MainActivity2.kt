@@ -16,7 +16,7 @@ class MainActivity2 : AppCompatActivity() {
         Toast.makeText(this, hm , Toast.LENGTH_SHORT).show()
         var ten = findViewById<TextView>(R.id.ad)
         val button = findViewById<Button>(R.id.trolai)
-        ten.text = hm
+        ten.text = "hello "+hm
         button.setOnClickListener(){
             val intent: Intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
