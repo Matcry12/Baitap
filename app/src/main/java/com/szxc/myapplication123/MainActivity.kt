@@ -13,12 +13,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Toast.makeText(this, "tứng tưng từng tưng", Toast.LENGTH_SHORT).show()
         val editText = findViewById<EditText>(R.id.nhapten)
-        val button = findViewById<Button>(R.id.bac)
+        val button = findViewById<Button>(R.id.back)
         button.setOnClickListener(){
-          val intent : Intent = Intent(this, MainActivity2::class.java)
-            val name = editText.text.toString()
-            Toast.makeText(this, name, Toast.LENGTH_SHORT).show()
-            intent.putExtra("dare", name)
+            val intent : Intent = Intent(this, MainActivity2::class.java)
+            val dulieunhap = editText.text.toString()
+            Toast.makeText(this, dulieunhap, Toast.LENGTH_SHORT).show()
+            intent.putExtra("dulieu1", dulieunhap)
             startActivity(intent)
         }
         }
